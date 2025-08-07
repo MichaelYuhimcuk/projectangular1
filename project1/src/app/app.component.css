@@ -1,0 +1,10 @@
+.info-card {
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 20px auto;
+}
