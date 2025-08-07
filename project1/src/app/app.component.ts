@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { InfoService } from './info.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project';
+  info: { date: string; name: string; topic: string };
+
+  constructor(private infoService: InfoService) {
+    this.info = this.infoService.getInfo();
+  }
 }
